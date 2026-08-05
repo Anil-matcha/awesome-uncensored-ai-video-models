@@ -1,0 +1,9 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.env
+*.mp4
+*.webm
+*.mov
+*.mkv
