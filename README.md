@@ -9,6 +9,7 @@
 ## Contents
 
 - [Recent local candidates](#recent-local-candidates)
+- [Hosted/API families](#hostedapi-families)
 - [Filtered reference models](#filtered-reference-models)
 - [Community-reported variants](#community-reported-variants)
 - [Established local baselines](#established-local-baselines)
@@ -40,6 +41,21 @@ These entries are included because weights, code, or a reproducible local pipeli
 ### Why local access matters
 
 Local inference can avoid provider-side prompt moderation, endpoint-specific refusals, and hosted output filters. It does not remove the model license, dataset restrictions, UI safeguards, watermarking, or legal obligations. The exact checkpoint and pipeline must be recorded for every claim.
+
+## Hosted/API families
+
+These newer Wan families are listed separately because the public model documentation exposes them as hosted/API model IDs rather than as local checkpoints in the official Wan2.1/Wan2.2 repositories. Their filtering status is endpoint-specific and must be tested against the exact provider, model ID, snapshot, region, and date.
+
+| Model / family | Release / update | Access | Video capabilities | Status | Official source |
+| --- | --- | --- | --- | --- | --- |
+| Wan 2.7 | 2026 API snapshots | Hosted / API | T2V, I2V, R2V, video editing, audio sync, multi-shot narrative, reference images/videos, 720P/1080P, 2–15s | Community-reported endpoint; verify exact deployment | [Video-model documentation](https://docs.qwencloud.com/developer-guides/getting-started/video-models) |
+| Wan 2.6 | 2025–2026 API snapshots | Hosted / API | T2V, I2V, R2V, audio sync, multi-shot narrative, 720P/1080P, 2–15s | Community-reported endpoint; verify exact deployment | [Video-model documentation](https://docs.qwencloud.com/developer-guides/getting-started/video-models) |
+| Wan 2.5 | 2025 API previews | Hosted / API | T2V and I2V with audio sync, 480P/720P/1080P, 5–10s | Community-reported endpoint; verify exact deployment | [Video-model documentation](https://docs.qwencloud.com/developer-guides/getting-started/video-models) |
+| Kling VIDEO 3.0 / VIDEO 3.0 Omni | 2026 | Hosted / API | Text-to-video, image-to-video, native audio, multi-shot storyboards, multimodal references, and cross-task workflows | Endpoint-specific; uncensored status to verify | [Official platform](https://kling.ai/) · [VIDEO 3.0 guide](https://app.klingai.com/cn/quickstart/klingai-video-3-model-user-guide) |
+| Kling VIDEO 2.6 / VIDEO O1 | 2025–2026 | Hosted / API | T2V/I2V, start-and-end frames, native audio, and reference workflows; predecessor families to VIDEO 3.0 | Endpoint-specific; uncensored status to verify | [Official VIDEO 3.0 guide](https://app.klingai.com/cn/quickstart/klingai-video-3-model-user-guide) |
+| Seedance 2.0 / 2.0 Fast | 2026 | Hosted / API | Text, image, audio, and video inputs with joint audio-video generation, reference control, editing, and extension | Endpoint-specific; uncensored status to verify | [Official model page](https://seed.bytedance.com/en/seedance2_0) · [ModelArk API docs](https://docs.byteplus.com/api/docs/ModelArk/2298881) |
+| Seedance 1.5 Pro | 2025-12 | Hosted / API | Native synchronized audio-video generation, T2V/I2V, lip-sync, and cinematic camera control | Endpoint-specific; uncensored status to verify | [Official technical page](https://seed.bytedance.com/en/public_papers/seedance-1-5-pro-a-native-audio-visual-joint-generation-foundation-model) · [ModelArk API docs](https://docs.byteplus.com/api/docs/ModelArk/2298881) |
+| Seedance 1.0 Pro / Pro Fast | 2025 | Hosted / API | Text-to-video, image-to-video, multi-shot generation, and prompt-controlled motion | Endpoint-specific; uncensored status to verify | [Official model page](https://seed.bytedance.com/en/seedance) · [ModelArk API docs](https://docs.byteplus.com/api/docs/ModelArk/2298881) |
 
 ## Filtered reference models
 
