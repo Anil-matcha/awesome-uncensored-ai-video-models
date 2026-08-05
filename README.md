@@ -6,6 +6,13 @@
 
 **Last reviewed:** 2026-08-06
 
+## Related Projects
+
+- [awesome-ai-video-models](https://github.com/Anil-matcha/awesome-ai-video-models) — Compare mainstream and open video models by provider, price, speed, and capability alongside this filtering-focused catalog.
+- [awesome-uncensored-ai-image-models](https://github.com/Anil-matcha/awesome-uncensored-ai-image-models) — Companion catalog for image-generation and image-editing model variants.
+- [Open-Generative-AI](https://github.com/Anil-matcha/Open-Generative-AI) — Self-hosted image and video studio for testing generative-media workflows.
+- [Generative-Media-Skills](https://github.com/SamurAIGPT/Generative-Media-Skills) — Run and automate media-generation experiments from an AI coding agent.
+
 ## Contents
 
 - [Recent local candidates](#recent-local-candidates)
