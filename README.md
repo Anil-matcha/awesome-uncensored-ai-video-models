@@ -13,15 +13,12 @@
 - [awesome-ai-video-models](https://github.com/Anil-matcha/awesome-ai-video-models) — Compare mainstream and open video models by provider, price, speed, and capability alongside this filtering-focused catalog.
 - [awesome-uncensored-ai-image-models](https://github.com/Anil-matcha/awesome-uncensored-ai-image-models) — Companion catalog for image-generation and image-editing model variants.
 - [Open-Generative-AI](https://github.com/Anil-matcha/Open-Generative-AI) — Self-hosted image and video studio for testing generative-media workflows.
-- [Muapi](https://muapi.ai) — Unified API for image, video, and audio generation, including the hosted low-filter video endpoints listed below.
-- [Muapi video generation docs](https://muapi.ai/docs/video-generation) — API reference for the text-to-video and image-to-video endpoints used in these entries.
 - [muapi-skills](https://github.com/SamurAIGPT/muapi-skills) — Run and automate media-generation experiments from an AI coding agent.
 
 ## Contents
 
 - [Recent local candidates](#recent-local-candidates)
 - [Hosted/API families](#hostedapi-families)
-- [Muapi hosted low-filter endpoints](#muapi-hosted-low-filter-endpoints)
 - [Filtered reference models](#filtered-reference-models)
 - [Community-reported variants](#community-reported-variants)
 - [Established local baselines](#established-local-baselines)
@@ -68,21 +65,6 @@ These newer Wan families are listed separately because the public model document
 | Seedance 2.0 / 2.0 Fast | 2026 | Hosted / API | Text, image, audio, and video inputs with joint audio-video generation, reference control, editing, and extension | Endpoint-specific; uncensored status to verify | [Official model page](https://seed.bytedance.com/en/seedance2_0) · [ModelArk API docs](https://docs.byteplus.com/api/docs/ModelArk/2298881) |
 | Seedance 1.5 Pro | 2025-12 | Hosted / API | Native synchronized audio-video generation, T2V/I2V, lip-sync, and cinematic camera control | Endpoint-specific; uncensored status to verify | [Official technical page](https://seed.bytedance.com/en/public_papers/seedance-1-5-pro-a-native-audio-visual-joint-generation-foundation-model) · [ModelArk API docs](https://docs.byteplus.com/api/docs/ModelArk/2298881) |
 | Seedance 1.0 Pro / Pro Fast | 2025 | Hosted / API | Text-to-video, image-to-video, multi-shot generation, and prompt-controlled motion | Endpoint-specific; uncensored status to verify | [Official model page](https://seed.bytedance.com/en/seedance) · [ModelArk API docs](https://docs.byteplus.com/api/docs/ModelArk/2298881) |
-
-### Muapi hosted low-filter endpoints
-
-[Muapi](https://muapi.ai) exposes several of the families above as hosted "spicy" endpoints behind one API key, so you can test them without local GPU setup. Moderation behavior is endpoint-specific; test the exact model ID and date before relying on any claim. Get a key at [muapi.ai/access-keys](https://muapi.ai/access-keys).
-
-| Model / family | Access | Video capabilities | Status | Muapi pages |
-| --- | --- | --- | --- | --- |
-| Seedance 2.5 Spicy | Hosted / API | T2V and I2V at 480p, 1080p, and 4K | Community-reported endpoint; verify exact deployment | [Landing page](https://muapi.ai/seedance-2.5-spicy) · [T2V](https://muapi.ai/playground/seedance-2.5-spicy-text-to-video) · [I2V](https://muapi.ai/playground/seedance-2.5-spicy-image-to-video) |
-| Seedance 2.0 Spicy (standard, Fast, Mini) | Hosted / API | T2V and I2V, with Fast and Mini tiers | Community-reported endpoint; verify exact deployment | [T2V](https://muapi.ai/playground/seedance-2-spicy-text-to-video) · [I2V](https://muapi.ai/playground/seedance-2-spicy-image-to-video) |
-| Wan 3.0 Spicy | Hosted / API | T2V, I2V, and R2V | Community-reported endpoint; verify exact deployment | [Wan Spicy hub](https://muapi.ai/wan-spicy) · [T2V](https://muapi.ai/playground/wan3.0-spicy-text-to-video) · [I2V](https://muapi.ai/playground/wan3.0-spicy-image-to-video) |
-| Wan 2.7 / 2.6 Spicy | Hosted / API | I2V | Community-reported endpoint; verify exact deployment | [Wan Spicy hub](https://muapi.ai/wan-spicy) · [Wan 2.7 I2V](https://muapi.ai/playground/wan2.7-image-to-video-spicy) · [Wan 2.6 I2V](https://muapi.ai/playground/wan2.6-image-to-video-spicy) |
-| Wan 2.2 Spicy | Hosted / API | I2V and video extension | Community-reported endpoint; verify exact deployment | [I2V](https://muapi.ai/playground/wan2.2-spicy-image-to-video) · [Video extend](https://muapi.ai/playground/wan2.2-spicy-video-extend) |
-| MiniMax Hailuo H3 Spicy | Hosted / API | I2V | Community-reported endpoint; verify exact deployment | [Landing page](https://muapi.ai/minimax-h3-spicy) · [I2V](https://muapi.ai/playground/minimax-h3-image-to-video-spicy) |
-
-Muapi also hosts the standard (filtered) versions of these models, for example [Seedance 2.5](https://muapi.ai/seedance-2.5) and [Wan 3.0](https://muapi.ai/wan-3), so you can compare behavior on one API. All Muapi use is subject to its acceptable-use policy.
 
 ## Filtered reference models
 
