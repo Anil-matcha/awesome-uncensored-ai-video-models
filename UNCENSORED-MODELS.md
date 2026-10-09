@@ -32,11 +32,6 @@ These entries are included because the weights or a local inference implementati
 | LTX-2 / LTX-2.3 | Audio-video foundation model | LTX-2 pipeline and its checkpoint-specific terms | Open-weight candidate | Code is Apache-2.0; model-card and release terms still govern the selected weights. | [Code repository](https://github.com/Lightricks/LTX-Video) · [LTX-2.3 model card](https://huggingface.co/Lightricks/LTX-2.3) |
 | HunyuanVideo-1.5 | Video checkpoint family | Official HunyuanVideo-1.5 code and checkpoint | Open-weight candidate | The repository uses custom terms; read the official license before redistribution or commercial use. | [Official repository](https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5) |
 | HunyuanVideo | Video checkpoint | Official HunyuanVideo code and checkpoint | Open-weight candidate | The repository uses custom terms; read the official license before redistribution or commercial use. | [Official repository](https://github.com/Tencent-Hunyuan/HunyuanVideo) |
-| CogVideoX 2B / 5B / 1.5 | Video checkpoints | CogVideoX inference stack | Open-weight candidate | The 2B release is Apache-2.0; the 5B family uses a separate model license. | [Official repository](https://github.com/zai-org/CogVideo) |
-| Open-Sora | Video-generation research pipeline | Selected Open-Sora release and checkpoints | Open-weight candidate | Repository code is Apache-2.0; check checkpoint and dependency terms. | [Official repository](https://github.com/hpcaitech/Open-Sora) |
-| Allegro / Allegro-TI2V | Video checkpoints | Allegro inference code | Open-weight candidate | Apache-2.0 repository; confirm the selected checkpoint metadata. | [Official repository](https://github.com/rhymes-ai/Allegro) |
-| Mochi 1 | Text-to-video checkpoint | Mochi pipeline and VAE | Open-weight candidate | Apache-2.0 according to the official repository. | [Official repository](https://github.com/genmoai/mochi) |
-| AnimateDiff motion modules | Motion modules | Compatible Stable Diffusion image model | Open-weight candidate | Apache-2.0 code repository; the base image model and motion module terms both apply. | [Official repository](https://github.com/guoyww/AnimateDiff) |
 
 ## Community-labeled local variants
 

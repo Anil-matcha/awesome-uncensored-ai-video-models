@@ -39,13 +39,6 @@ These entries are included because weights, code, or a reproducible local pipeli
 | LTX-2 / LTX-2.3 | 2025-2026 | Local weights | Text-to-video, image-to-video, keyframes, LoRA control, and synchronized audio-video generation | Open-weight candidate; verify checkpoint terms | [Code repository](https://github.com/Lightricks/LTX-Video) · [LTX-2.3 model card](https://huggingface.co/Lightricks/LTX-2.3) · [Muapi LTX-2.3 T2V](https://muapi.ai/playground/ltx-2.3-text-to-video) · [I2V](https://muapi.ai/playground/ltx-2.3-image-to-video) |
 | HunyuanVideo-1.5 | 2025-12 onward | Local weights | Text-to-video and image-to-video, including step-distilled inference variants | Open-weight candidate; review the custom terms | [Official repository](https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5) |
 | HunyuanVideo | 2024-12 | Local weights | Text-to-video with local inference and fine-tuning workflows | Open-weight candidate; review the custom terms | [Official repository](https://github.com/Tencent-Hunyuan/HunyuanVideo) · [Muapi Hunyuan T2V](https://muapi.ai/playground/hunyuan-text-to-video) · [I2V](https://muapi.ai/playground/hunyuan-image-to-video) |
-| CogVideoX / CogVideoX1.5 | 2024-08 onward | Local weights | Text-to-video, image-to-video, and video continuation | Open-weight candidate; checkpoint terms vary | [Official repository](https://github.com/zai-org/CogVideo) |
-| Open-Sora | 2024-2026 | Local weights and training code | Open video-generation research and production pipeline | Open-weight candidate; verify the selected release | [Official repository](https://github.com/hpcaitech/Open-Sora) |
-| Allegro / Allegro-TI2V | 2024-12 onward | Local weights | Text-to-video and text/image-to-video research models | Open-weight candidate | [Official repository](https://github.com/rhymes-ai/Allegro) |
-| Mochi 1 | 2024-10 | Local weights | Text-to-video with LoRA fine-tuning and ComfyUI workflows | Open-weight candidate | [Official repository](https://github.com/genmoai/mochi) |
-| AnimateDiff | 2023-08 onward | Local modules and checkpoints | Animation of Stable Diffusion image models with motion modules | Open-weight candidate; base-model terms apply | [Official repository](https://github.com/guoyww/AnimateDiff) |
-| Stable Video Diffusion | 2023-11 | Local weights | Image-to-video and video foundation-model research | To verify per checkpoint and license | [Model card](https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt) |
-| VideoCrafter2 | 2024 | Local weights and code | Text-to-video and image-to-video research models | To verify per checkpoint and license | [Official repository](https://github.com/AILab-CVC/VideoCrafter) |
 
 ### Why local access matters
 
@@ -79,7 +72,6 @@ These hosted models are useful quality and capability references, but their prov
 | Veo | Hosted / API | Google policy controls and hosted access apply | [Google DeepMind Veo](https://deepmind.google/models/veo/) · [Muapi Veo 3.1](https://muapi.ai/playground/veo3.1-text-to-video) · [Veo 4](https://muapi.ai/playground/veo-4-text-to-video) |
 | Runway video models | Hosted | Hosted moderation and platform terms apply | [Runway research](https://runwayml.com/research) · [Muapi Runway](https://muapi.ai/playground/runway-text-to-video) |
 | Kling video models | Hosted | Hosted moderation and platform terms apply | [Kling AI](https://klingai.com/) |
-| Pika video models | Hosted | Hosted moderation and platform terms apply | [Pika](https://pika.art/) |
 
 ## Community-reported variants
 
@@ -90,15 +82,6 @@ The initial matrix includes community-labeled Wan and LTX derivatives found in p
 ## Established local baselines
 
 These models remain useful reference points even when no uncensored claim is made.
-
-### General-purpose video models
-
-| Model | Access | Family | Filtering status | Source |
-| --- | --- | --- | --- | --- |
-| ModelScope Text-to-Video | Local weights | ModelScope / DAMO | To verify | [Model card](https://huggingface.co/damo-vilab/text-to-video-ms-1.7b) |
-| VideoCrafter1 | Local weights | VideoCrafter | To verify | [Official repository](https://github.com/AILab-CVC/VideoCrafter) |
-| I2VGen-XL | Local weights | Alibaba DAMO | To verify | [Model card](https://huggingface.co/ali-vilab/i2vgen-xl) |
-| DynamiCrafter | Local weights | Image-to-video diffusion | To verify | [Official repository](https://github.com/Doubiiu/DynamiCrafter) |
 
 ### Community tools and workflows
 
