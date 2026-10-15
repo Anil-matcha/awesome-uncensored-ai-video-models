@@ -15,6 +15,7 @@
 - [Open-Generative-AI](https://github.com/Anil-matcha/Open-Generative-AI) — Self-hosted image and video studio for testing generative-media workflows.
 - [Muapi](https://muapi.ai) — Unified API for image, video, and audio generation, with hosted versions of many models in this catalog.
 - [muapi-skills](https://github.com/SamurAIGPT/muapi-skills) — Run and automate media-generation experiments from an AI coding agent.
+- [Uncensored AI Video Generator in ComfyUI](https://github.com/Anil-matcha/uncensored-ai-video-generator-comfyui) — guide to running the hosted spicy video models from this catalog inside ComfyUI with no GPU.
 
 ## Contents
 
