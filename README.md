@@ -1,38 +1,20 @@
-# Awesome Uncensored AI Video Models
+# Awesome AI Models Catalog & Android App
 
-> A community-maintained catalog of current AI video-generation and video-editing models—including local weights, adapters, hosted endpoints, and APIs—with a focus on filtering, access, licensing, and practical trade-offs.
-
-“Uncensored” is not a standardized technical term. A video model’s behavior can change with the checkpoint, text encoder, prompt wrapper, inference pipeline, UI, post-processing, provider policy, and model version. This list records those details instead of treating the label as a guarantee.
+> A community-maintained catalog and Android application of free publicly available AI models, LLMs, video-generation models, game-generation tools, and full-app AI generators.
 
 **Last reviewed:** 2026-09-29
 
-## Related Projects
+## Android Application (APK & AAB)
 
-- [awesome-uncensored-llms](https://github.com/Anil-matcha/awesome-uncensored-llms) — Companion catalog for language models and LLM fine-tunes.
-- [awesome-uncensored-ai-models](https://github.com/Anil-matcha/awesome-uncensored-ai-models) — Directory for all three uncensored model catalogs.
-- [awesome-ai-video-models](https://github.com/Anil-matcha/awesome-ai-video-models) — Compare mainstream and open video models by provider, price, speed, and capability alongside this filtering-focused catalog.
-- [awesome-uncensored-ai-image-models](https://github.com/Anil-matcha/awesome-uncensored-ai-image-models) — Companion catalog for image-generation and image-editing model variants.
-- [Open-Generative-AI](https://github.com/Anil-matcha/Open-Generative-AI) — Self-hosted image and video studio for testing generative-media workflows.
-- [Muapi](https://muapi.ai) — Unified API for image, video, and audio generation, with hosted versions of many models in this catalog.
-- [muapi-skills](https://github.com/SamurAIGPT/muapi-skills) — Run and automate media-generation experiments from an AI coding agent.
-- [Uncensored AI Video Generator in ComfyUI](https://github.com/Anil-matcha/uncensored-ai-video-generator-comfyui) — guide to running the hosted spicy video models from this catalog inside ComfyUI with no GPU.
+This repository includes a native Android app built with **Gradle** and **Jetpack Compose** that lets users search, filter, and access all free AI providers, LLM endpoints, video generation models, and full-app / game generators.
 
-## Contents
+### Building the Android App
 
-- [Recent local candidates](#recent-local-candidates)
-- [Hosted/API families](#hostedapi-families)
-- [Filtered reference models](#filtered-reference-models)
-- [Community-reported variants](#community-reported-variants)
-- [Established local baselines](#established-local-baselines)
-- [How entries are classified](#how-entries-are-classified)
-- [What each entry should include](#what-each-entry-should-include)
-- [Related catalogs and surveys](#related-catalogs-and-surveys)
-- [Contributing](#contributing)
-- [Responsible use](#responsible-use)
+To build the debug and release APKs and Android App Bundles (AAB) using Gradle:
 
-## Recent local candidates
-
-These entries are included because weights, code, or a reproducible local pipeline are publicly available. Local execution removes a hosted moderation layer, but open weights alone do not prove that a model is uncensored or low-filter.
+```bash
+# Build Debug APK & AAB
+./gradlew assembleDebug bundleDebug
 
 | Model / family | Release / update | Access | Video capabilities | Status | Model link |
 | --- | --- | --- | --- | --- | --- |
@@ -41,13 +23,20 @@ These entries are included because weights, code, or a reproducible local pipeli
 | LTX-2 / LTX-2.3 | 2025-2026 | Local weights | Text-to-video, image-to-video, keyframes, LoRA control, and synchronized audio-video generation | Open-weight candidate; verify checkpoint terms | [LTX-2.3 T2V](https://muapi.ai/playground/ltx-2.3-text-to-video) · [I2V](https://muapi.ai/playground/ltx-2.3-image-to-video) |
 | HunyuanVideo | 2024-12 | Local weights | Text-to-video with local inference and fine-tuning workflows | Open-weight candidate; review the custom terms | [HunyuanVideo T2V](https://muapi.ai/playground/hunyuan-text-to-video) · [I2V](https://muapi.ai/playground/hunyuan-image-to-video) |
 
-### Why local access matters
+The compiled artifacts will be placed in:
+- **APK**: `app/build/outputs/apk/debug/app-debug.apk` and `app/build/outputs/apk/release/app-release.apk`
+- **AAB**: `app/build/outputs/bundle/debug/app-debug.aab` and `app/build/outputs/bundle/release/app-release.aab`
 
-Local inference can avoid provider-side prompt moderation, endpoint-specific refusals, and hosted output filters. It does not remove the model license, dataset restrictions, UI safeguards, watermarking, or legal obligations. The exact checkpoint and pipeline must be recorded for every claim.
+---
 
-## Hosted/API families
+## Contents
 
-These newer Wan families are listed separately because the public model documentation exposes them as hosted/API model IDs rather than as local checkpoints in the official Wan2.1/Wan2.2 repositories. Their filtering status is endpoint-specific and must be tested against the exact provider, model ID, snapshot, region, and date.
+- [Free LLM Providers & Public Endpoints](#free-llm-providers--public-endpoints)
+- [Video Generation Models](#video-generation-models)
+- [Game & Full-App AI Generators](#game--full-app-ai-generators)
+- [Uncensored & Low-Filter Video Models](#uncensored--low-filter-video-models)
+- [Related Projects](#related-projects)
+- [Contributing](#contributing)
 
 | Model / family | Release / update | Access | Video capabilities | Status | Model link |
 | --- | --- | --- | --- | --- | --- |
@@ -64,9 +53,9 @@ These newer Wan families are listed separately because the public model document
 | Seedance 1.5 Pro | 2025-12 | Hosted / API | Native synchronized audio-video generation, T2V/I2V, lip-sync, and cinematic camera control | Endpoint-specific; uncensored status to verify | [Seedance 1.5 Pro T2V](https://muapi.ai/playground/seedance-v1.5-pro-t2v) · [I2V](https://muapi.ai/playground/seedance-v1.5-pro-i2v) |
 | Seedance 1.0 Pro / Pro Fast | 2025 | Hosted / API | Text-to-video, image-to-video, multi-shot generation, and prompt-controlled motion | Endpoint-specific; uncensored status to verify | [Seedance 1.0 Pro T2V](https://muapi.ai/playground/seedance-pro-t2v) · [I2V](https://muapi.ai/playground/seedance-pro-i2v) |
 
-## Filtered reference models
+## Free LLM Providers & Public Endpoints
 
-These hosted models are useful quality and capability references, but their provider policies and moderation layers make them poor fits for an uncensored catalog. They remain here so frontier quality is not confused with low filtering.
+Free, zero-cost API providers, endpoints, and local execution runners for LLMs:
 
 | Model / family | Access | Why it is a reference only | Model link |
 | --- | --- | --- | --- |
@@ -79,12 +68,12 @@ These hosted models are useful quality and capability references, but their prov
 
 The [dedicated variant matrix](UNCENSORED-MODELS.md) records full checkpoints, LoRAs, text encoders, quantizations, and community-reported endpoints whose creators or users describe them as uncensored, low-filter, or NSFW-capable.
 
-The initial matrix includes community-labeled Wan and LTX derivatives found in public model repositories. These entries are not independent certifications: the exact base model, file revision, license, and inference setup still need to be checked before use.
+---
 
-## Established local baselines
+## Video Generation Models
 
-These models remain useful reference points even when no uncensored claim is made.
-
+Open-weight and public video-generation foundation models and pipelines:
+Ft 
 ### Community tools and workflows
 
 | Tool | Use | Source |
@@ -106,42 +95,37 @@ Want to add a model? Use the [submission template](.github/ISSUE_TEMPLATE/model-
 - **To verify** — the model is a useful catalog candidate, but its filtering behavior, lineage, or licensing still needs documentation.
 - **Removed** — the source is unavailable, the license is unclear, or the entry repeatedly fails the contribution requirements.
 
-These labels describe observed behavior and documentation quality. They do not grant permission to create, distribute, or use any particular content.
+---
 
-## What each entry should include
+## Game & Full-App AI Generators
 
-Every accepted entry should document:
+Publicly accessible web tools, studios, and frameworks for prompt-driven game and full-application creation:
 
-- exact model, checkpoint, adapter, or text-encoder version;
-- release date or most recent major update;
-- official source, access method, and download/API links;
-- whether it is local, hosted, API-only, or available in multiple forms;
-- base architecture and intended video task: T2V, I2V, V2V, R2V, S2V, animation, or editing;
-- supported resolution, frame rate, duration, audio behavior, and aspect ratios where known;
-- license, commercial-use terms, provider terms, and restrictions;
-- approximate VRAM, latency, offloading, quantization, or hardware requirements;
-- supported inference tools and workflows;
-- whether filtering is in the weights, text encoder, pipeline, UI, provider, post-processor, or an optional safety checker;
-- reproducible notes about testing, including date, file revision, and setup.
+| Tool / Platform | Category | Output & Capabilities | Link / Access |
+| --- | --- | --- | --- |
+| **v0 by Vercel** | Generative UI & Full App | Generates React, Next.js, and Tailwind CSS web components and apps from prompt descriptions. | [v0.dev](https://v0.dev/) |
+| **Bolt.new** | Full-Stack Web App Studio | In-browser WebContainer VM that creates full-stack applications, installs NPM packages, and executes code. | [Bolt.new](https://bolt.new/) |
+| **Lovable.dev** | Full-Stack Web App Studio | Natural language prompt to full-stack React & Supabase web application generator with GitHub integration. | [Lovable.dev](https://lovable.dev/) |
+| **Claude Artifacts** | Interactive App Workspace | Interactive sandbox inside Claude for building single-page apps, HTML5 games, interactive tools, and visual widgets. | [Claude AI](https://claude.ai/) |
+| **Rosebud AI Game Crafter** | 2D & 3D Web Game Generator | Creates browser games using Phaser.js or Three.js from prompt descriptions with code and asset editing. | [Rosebud AI](https://play.rosebud.ai/) |
+| **Open-Generative-AI** | Self-Hosted Studio Framework | Open-source generative media studio for testing image, video, and interactive game generation workflows. | [Open-Generative-AI Repo](https://github.com/Anil-matcha/Open-Generative-AI) |
 
-## Related catalogs and surveys
+---
 
-These projects were checked while preparing this catalog. They cover adjacent scopes and are useful references, but none is a dedicated, source-tracked catalog of uncensored video models.
+## Uncensored & Low-Filter Video Models
 
-- [Awesome Video Generation](https://github.com/backblaze-labs/awesome-video-generation) — APIs, tools, infrastructure, and open models for developers.
-- [Awesome Text-to-Video](https://github.com/jianzhnie/awesome-text-to-video) — model comparison tables and text-to-video resources.
-- [Awesome Video Generation](https://github.com/kongzhecn/awesome-video-generation) — research papers and video-generation methods.
-- [State of open video generation models in Diffusers](https://huggingface.co/blog/video_gen) — an open-model overview and Diffusers guidance.
-- [Hugging Face video-generation models](https://huggingface.co/models?library=video-generation) — a live model index rather than a curated safety catalog.
+Detailed source-tracked list of local video checkpoints and community variants is maintained in [UNCENSORED-MODELS.md](UNCENSORED-MODELS.md).
 
-## Contributing
+---
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting a model. Short version: cite primary sources, preserve license and provider terms, avoid vague “uncensored” claims, and keep entries factual and reproducible.
+## Related Projects
 
-## Responsible use
+- [awesome-ai-video-models](https://github.com/Anil-matcha/awesome-ai-video-models) — Compare mainstream and open video models by provider, price, speed, and capability.
+- [awesome-uncensored-ai-image-models](https://github.com/Anil-matcha/awesome-uncensored-ai-image-models) — Companion catalog for image-generation and image-editing model variants.
+- [Open-Generative-AI](https://github.com/Anil-matcha/Open-Generative-AI) — Self-hosted image, video, and app generation studio.
 
-Use these resources for lawful, consensual, and ethical creative or research work. Do not use them to create sexual content involving minors, non-consensual intimate imagery, targeted harassment, fraud, impersonation, or other abusive or illegal material. Do not submit real-person sexual examples or personal data to this repository. Follow the model license, provider terms, and the laws that apply to you.
+---
 
 ## License
 
-The original documentation and catalog content in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Individual models, providers, APIs, checkpoints, code, datasets, and linked resources remain subject to their own licenses and terms.
+The documentation and catalog content in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Code files and Android project source code are licensed under Apache-2.0.
