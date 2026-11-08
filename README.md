@@ -78,7 +78,7 @@ These hosted models are useful quality and capability references, but their prov
 
 ## Community-reported variants
 
-The [dedicated variant matrix](UNCENSORED-MODELS.md) records full checkpoints, LoRAs, text encoders, quantizations, and community-reported endpoints whose creators or users describe them as uncensored, low-filter, or NSFW-capable.
+The [dedicated variant matrix](UNCENSORED-MODELS.md) records full checkpoints, LoRAs, text encoders, quantizations, and community-reported endpoints whose creators or users describe them as uncensored or low-filter.
 
 The initial matrix includes community-labeled Wan and LTX derivatives found in public model repositories. These entries are not independent certifications: the exact base model, file revision, license, and inference setup still need to be checked before use.
 
@@ -99,7 +99,7 @@ Want to add a model? Use the [submission template](.github/ISSUE_TEMPLATE/model-
 ## How entries are classified
 
 - **Verified low-filter** — the exact checkpoint and inference setup are documented, and a maintainer has reproduced the reported behavior.
-- **Creator-labeled** — the model card explicitly describes a low-filter, uncensored, or NSFW modification, but this repository has not independently reproduced it.
+- **Creator-labeled** — the model card explicitly describes a low-filter or uncensored modification, but this repository has not independently reproduced it.
 - **Community-labeled** — the repository name, tags, or surrounding metadata make the claim, but the card does not provide enough reproducible detail.
 - **Community-reported endpoint** — users report behavior for a specific hosted provider, model snapshot, region, UI, or date; the claim must not be generalized to the whole model family.
 - **Open-weight candidate** — the weights can be run or customized locally, but open weights are not proof that a model is uncensored.

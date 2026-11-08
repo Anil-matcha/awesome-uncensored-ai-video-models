@@ -1,6 +1,6 @@
 # Uncensored / Low-Filter Video Models
 
-> A source-tracked list of local video checkpoints, LoRAs, text encoders, quantizations, and community-reported hosted endpoints whose creators or users describe them as uncensored, low-filter, or NSFW-capable.
+> A source-tracked list of local video checkpoints, LoRAs, text encoders, quantizations, and community-reported hosted endpoints whose creators or users describe them as uncensored or low-filter.
 
 **Last reviewed:** 2026-08-06
 
@@ -35,17 +35,9 @@ These entries are included because the weights or a local inference implementati
 
 ## Community-labeled local variants
 
-These repositories use an uncensored/NSFW label or describe a low-filter modification. They are listed as claims to investigate, not as independent certifications.
+These repositories use an uncensored label or describe a low-filter modification. They are listed as claims to investigate, not as independent certifications.
 
-| Model / variant | Type | Base / requirement | Evidence | License and notes | Source |
-| --- | --- | --- | --- | --- | --- |
-| NSFW Wan 1.3B T2V | Full checkpoint | `Wan-AI/Wan2.1-T2V-1.3B` | Creator-labeled | Hugging Face metadata lists CreativeML OpenRAIL-M; the card also contains informal licensing language, so read the full terms and treat redistribution rights as unresolved until verified. | [Model card](https://huggingface.co/Cedbane96/NSFW_Wan_1.3b) |
-| `ltxvideo-2b-nsfw` | Full checkpoint | LTX-Video 2B image-to-video pipeline | Community-labeled | The model page is marked sensitive and provides a Diffusers loading example; no clear license is shown on the page reviewed. | [Model card](https://huggingface.co/Muinez/ltxvideo-2b-nsfw) |
-| `PinkCherry_NSFW_LTX23` | GGUF checkpoint / quantization | LTX-2.3 / LTX video stack | Community-labeled | The model page shows Apache-2.0, but lineage, training data, and output behavior require separate review. | [Model card](https://huggingface.co/SexGod1979/PinkCherry_NSFW_LTX23) |
-| `WAN2.2_LoraSet_NSFW` | LoRA set | Wan2.2 | Adapter; community-labeled | The model page shows an unknown license. Confirm base-model compatibility and permissions before use. | [Model card](https://huggingface.co/lkzd7/WAN2.2_LoraSet_NSFW) |
-| `WAN2.2_Lora_NSFW` | LoRA | Wan2.2 | Adapter; community-labeled | The name identifies a Wan2.2 LoRA, but the card, license, and training provenance must be checked before acceptance. | [Model card](https://huggingface.co/erikaoficialm/WAN2.2_Lora_NSFW) |
-| `wan2.2_14b_i2v_480p_lightning_nsfw_diffusers` | Diffusers checkpoint / adapter candidate | Wan2.2 I2V 14B 480P | Community-labeled | The public model index exposes the name and I2V task; license, lineage, and behavior need review. | [Model card](https://huggingface.co/fdk6566/wan2.2_14b_i2v_480p_lightning_nsfw_diffusers) |
-| `NSFW-Wan-UMT5-XXL` | Text-encoder candidate | Wan pipeline using UMT5-XXL | Needs review | The repository has no model card and no visible license on the page reviewed. It must not be treated as a verified replacement text encoder. | [Model card](https://huggingface.co/NSFW-API/NSFW-Wan-UMT5-XXL) |
+_No entries currently listed; submissions welcome._
 
 ## Community-reported hosted/API variants
 
@@ -70,7 +62,7 @@ Contributors can use the [submission template](.github/ISSUE_TEMPLATE/model-subm
 
 - A text-encoder modification does not guarantee that the video transformer learned every concept or produces coherent motion.
 - A local checkpoint is not automatically free of UI, pipeline, post-processing, or optional safety filters.
-- “NSFW” or “uncensored” tags do not grant permission to create illegal or non-consensual material.
+- “Uncensored” tags do not grant permission to create illegal or non-consensual material.
 - A model’s license does not automatically transfer to its base model, training data, outputs, adapter, or hosted deployment.
 - A checkpoint’s content label does not establish that its training data was lawfully sourced or that real-person likenesses may be used.
 
