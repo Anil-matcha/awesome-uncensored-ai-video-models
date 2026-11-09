@@ -9,6 +9,7 @@
 ## Related Projects
 
 - [Spicy AI Video Generator API](https://github.com/Anil-matcha/Spicy-AI-Video-Generator-API) — compare spicy video endpoints across Seedance 2.5/2, Wan 3.0 and MiniMax H3 in one guide.
+- [Spicy Lab](https://spicyapi.app) — Independent comparison/benchmark site ranking NSFW AI video, image, and chat models with side-by-side test runs and published methodology (not a generator).
 - [awesome-uncensored-llms](https://github.com/Anil-matcha/awesome-uncensored-llms) — Companion catalog for language models and LLM fine-tunes.
 - [awesome-uncensored-ai-models](https://github.com/Anil-matcha/awesome-uncensored-ai-models) — Directory for all three uncensored model catalogs.
 - [awesome-ai-video-models](https://github.com/Anil-matcha/awesome-ai-video-models) — Compare mainstream and open video models by provider, price, speed, and capability alongside this filtering-focused catalog.
