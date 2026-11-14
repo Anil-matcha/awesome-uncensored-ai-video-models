@@ -6,6 +6,8 @@
 
 **Last reviewed:** 2026-09-29
 
+Hosted Spicy API entries include Seedance 2.0 and 2.5, Wan, and MiniMax H3 variants, alongside local and open-weight models. The catalog records route-specific evidence because filtering behavior and availability depend on the provider and can change.
+
 ## Related Projects
 
 - [Spicy AI Video Generator API](https://github.com/Anil-matcha/Spicy-AI-Video-Generator-API) — compare spicy video endpoints across Seedance 2.5/2, Wan 3.0 and MiniMax H3 in one guide.
