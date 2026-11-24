@@ -19,6 +19,7 @@ Hosted Spicy API entries include Seedance 2.0 and 2.5, Wan, and MiniMax H3 varia
 - [Muapi](https://muapi.ai) — Unified API for image, video, and audio generation, with hosted versions of many models in this catalog.
 - [muapi-skills](https://github.com/SamurAIGPT/muapi-skills) — Run and automate media-generation experiments from an AI coding agent.
 - [Uncensored AI Video Generator in ComfyUI](https://github.com/Anil-matcha/uncensored-ai-video-generator-comfyui) — guide to running the hosted spicy video models from this catalog inside ComfyUI with no GPU.
+- [NSFW-AI-API](https://github.com/Anil-matcha/NSFW-AI-API) — NSFW detection and moderation for text and images, to screen prompts and outputs
 
 ## Contents
 
