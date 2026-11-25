@@ -19,6 +19,7 @@ Hosted Spicy API entries include Seedance 2.0 and 2.5, Wan, and MiniMax H3 varia
 - [Muapi](https://muapi.ai) — Unified API for image, video, and audio generation, with hosted versions of many models in this catalog.
 - [muapi-skills](https://github.com/SamurAIGPT/muapi-skills) — Run and automate media-generation experiments from an AI coding agent.
 - [Uncensored AI Video Generator in ComfyUI](https://github.com/Anil-matcha/uncensored-ai-video-generator-comfyui) — guide to running the hosted spicy video models from this catalog inside ComfyUI with no GPU.
+- [Magi 2 API](https://github.com/Anil-matcha/Magi-2-API) — Magi 2 text-to-video and image-to-video endpoints with native audio, plus notes on what uncensored and spicy mean for open weights.
 - [NSFW-AI-API](https://github.com/Anil-matcha/NSFW-AI-API) — NSFW detection and moderation for text and images, to screen prompts and outputs
 
 ## Contents
@@ -55,6 +56,7 @@ These newer Wan families are listed separately because the public model document
 
 | Model / family | Release / update | Access | Video capabilities | Status | Model link |
 | --- | --- | --- | --- | --- | --- |
+| Magi 2 (MAGI-2 Preview) | 2026 | Local weights and hosted / API | Text-to-video and image-to-video with generated audio, 10 s clips, up to 1080p | Open-weight candidate; filtering is not documented, verify the exact checkpoint or endpoint | [Magi 2](https://muapi.ai/magi-2) · [T2V](https://muapi.ai/playground/magi-2-text-to-video) · [I2V](https://muapi.ai/playground/magi-2-image-to-video) · [Magi 2 API guide](https://github.com/Anil-matcha/Magi-2-API) |
 | Wan 2.7 | 2026 API snapshots | Hosted / API | T2V, I2V, R2V, video editing, audio sync, multi-shot narrative, reference images/videos, 720P/1080P, 2–15s | Community-reported endpoint; verify exact deployment | [Wan 2.7 Spicy](https://muapi.ai/wan-spicy) · [I2V](https://muapi.ai/playground/wan2.7-image-to-video-spicy) |
 | Wan 2.6 | 2025–2026 API snapshots | Hosted / API | T2V, I2V, R2V, audio sync, multi-shot narrative, 720P/1080P, 2–15s | Community-reported endpoint; verify exact deployment | [Wan 2.6 Spicy I2V](https://muapi.ai/playground/wan2.6-image-to-video-spicy) |
 | Wan 2.5 | 2025 API previews | Hosted / API | T2V and I2V with audio sync, 480P/720P/1080P, 5–10s | Community-reported endpoint; verify exact deployment | [Wan 2.5 T2V](https://muapi.ai/playground/wan2.5-text-to-video) · [I2V](https://muapi.ai/playground/wan2.5-image-to-video) |
